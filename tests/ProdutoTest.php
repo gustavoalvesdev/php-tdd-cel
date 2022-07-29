@@ -6,11 +6,28 @@ use PHPUnit\Framework\TestCase;
 
 class ProdutoTest extends TestCase
 {
-    public function testSetNomeDoProdutoESetadoCorretamente()
+    public function testSeONomeDoProdutoESetadoCorretamente()
     {
         $produto = new Produto();
-        $produto->setName('Produto 1');
+        $produto->setPrice('19.99');
 
-        $this->assertEquals('Produto 1', $produto->getName(), 'Valores não são iguais');
+        $this->assertEquals('19.99', $produto->getPrice(), 'Valores não são iguais');
+    }
+
+    public function testSeOPrecoDoProdutoESetadoCorretamente()
+    {
+        $produto = new Produto();
+        $produto->setPrice('19.99');
+
+        $this->assertEquals('19.99', $produto->getPrice(), 'Valores não são iguais');
+
+    }
+
+    public function testSeOSlugDoProdutoESetadoCorretamente()
+    {
+        $produto = new Produto();
+        $produto->setName('produto-1');
+
+        $this->assertEquals('produto-1', $produto->getName(), 'Valores não são iguais');
     }
 }
