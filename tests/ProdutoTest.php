@@ -14,15 +14,15 @@ class ProdutoTest extends TestCase
         $this->produto = new Produto();
     }
 
-    public static function setUpBeforeClass(): void
-    {
-        print __METHOD__;
-    }
+    // public static function setUpBeforeClass(): void
+    // {
+    //     print __METHOD__;
+    // }
 
-    public static function tearDownAfterClass(): void
-    {
-        print __METHOD__;
-    }
+    // public static function tearDownAfterClass(): void
+    // {
+    //     print __METHOD__;
+    // }
 
     public function testSeONomeDoProdutoESetadoCorretamente()
     {
