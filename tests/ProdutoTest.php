@@ -52,8 +52,9 @@ class ProdutoTest extends TestCase
     /** 
      * @expectedException InvalidArgumentException
      * @expectedExceptionMessage Parâmetro inválido, informe um slug
+     * @test
      */
-    public function testSeSetSlugLancaExceptionQuandoNaoInformado()
+    public function seSetSlugLancaExceptionQuandoNaoInformado()
     {
         $product = $this->produto;
         
