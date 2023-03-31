@@ -107,11 +107,14 @@ class CarrinhoTest extends TestCase
         $this->markTestIncomplete('Teste não está completo!');
     }
 
+    /**
+     * @requires PHP == 5.3
+     */
     public function testSeFeatureEspecificaParaVerso53PHPTrabalhaDeFormaEsperada()
     {
-        if (PHP_VERSION != 5.3) {
-            $this->markTestSkipped('Este teste só roda para versão abaixo do PHP 7.');
-        }
+        // if (PHP_VERSION != 5.3) {
+        //     $this->markTestSkipped('Este teste só roda para versão abaixo do PHP 7.');
+        // }
 
         $this->assertTrue(true);
     }
