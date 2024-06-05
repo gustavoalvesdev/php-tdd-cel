@@ -1,1 +1,3 @@
-# php-tdd-cel 
+# TDD COM PHP
+## Atualizar Dependências do Composer
+`composer update`
