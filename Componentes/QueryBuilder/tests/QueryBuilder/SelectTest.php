@@ -1,6 +1,6 @@
 <?php
 
-namespace CodeTests\QueryBuilder;
+namespace Code\QueryBuilder;
 
 use PHPUnit\Framework\TestCase;
 use Code\QueryBuilder\Select;
@@ -17,13 +17,13 @@ class SelectTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->select = new Select();
+        $this->select = new Select('products');
     }
 
     public function testIfQueryBaseIsGeneratedWithSuccess()
     {
-        $query = $this->select('products');
+        $query = $this->select->getSql();
 
-        $this->assertEquals('SELECT * FROM products', $query->getSql());
+        $this->assertEquals('SELECT * FROM products', $query);
     }
 }
